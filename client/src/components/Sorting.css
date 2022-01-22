@@ -1,0 +1,5 @@
+.sorting {
+    display     : flex;
+    gap         : .5rem;
+    margin-right: 1.5rem;
+}

@@ -1,0 +1,71 @@
+.filters .filters-set.hidden {
+    display   : none;
+    transform : translateY(-1rem);
+    transition: transform 20s ease-in-out;
+}
+
+.filters .filters-set,
+.filters .filters-set.visible {
+    display         : flex;
+    justify-content : space-evenly;
+    align-items     : center;
+    flex-wrap       : wrap;
+    gap             : 0.5rem;
+    padding         : 1rem 0.7rem;
+    background-color: hsl(60, 18%, 96%);
+    border-radius   : .7rem;
+    margin          : 0 1.5rem;
+    border          : .125rem solid hsl(0, 0%, 10%);
+    box-shadow      :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+    /* transform: translateY(.5rem); */
+}
+
+.filters .filters-set>legend {
+    text-align : justify;
+    font-size  : 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.filters .filters-set #clear-filters-btn {
+    bottom            : 5%;
+    left              : 90%;
+    margin-right      : 1rem;
+    width             : max-content;
+    cursor            : pointer;
+    font-weight       : 700;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    padding           : .7em 1em;
+    border-radius     : .7rem;
+    background        : hsl(60, 6%, 88%);
+    border            : .1rem solid transparent;
+    box-shadow        :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    text-decoration  : none;
+    color            : hsl(0, 0%, 10%);
+}
+
+.filters .filters-set #clear-filters-btn:hover {
+    background: hsl(60, 18%, 71%);
+}
+
+.filters .filters-set #clear-filters-btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform    : scale(0.95);
+    transform        : scale(0.95);
+}

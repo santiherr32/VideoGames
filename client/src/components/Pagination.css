@@ -1,0 +1,44 @@
+.pages .pages__number-btn,
+.pages .pages__next-btn,
+.pages .pages__prev-btn {
+    margin-left       : 1rem;
+    width             : max-content;
+    cursor            : pointer;
+    font-weight       : 700;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    padding           : .7em 1em;
+    border-radius     : .7rem;
+    background        : hsl(60, 18%, 96%);
+    border            : .1rem solid transparent;
+    box-shadow        :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+    font-size      : 15px;
+    text-decoration: none;
+    color          : hsl(0, 0%, 10%);
+}
+
+/* .pages .pages__number-btn[id="1"] {
+    border: .2rem red solid;
+} */
+
+.pages .pages__number-btn.active {
+    border: .2rem red solid;
+}
+
+.pages .pages__number-btn:hover,
+.pages .pages__next-btn:hover,
+.pages .pages__prev-btn:hover {
+    background: hsl(60, 18%, 71%);
+}
+
+.pages .pages__number-btn:active,
+.pages .pages__next-btn:active,
+.pages .pages__prev-btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform    : scale(0.95);
+    transform        : scale(0.95);
+}

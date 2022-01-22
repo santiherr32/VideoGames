@@ -1,0 +1,18 @@
+.prompt{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: .8em 2em;
+    height: max-content;
+    max-width: 30rem;
+    /* width: 30%; */
+    inset: 80% 0 0 70%;
+}
+
+.prompt .prompt-active{
+    transform: translateX(-20px);
+    transition: transform 1s ease-in-out;
+}

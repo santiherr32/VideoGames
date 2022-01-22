@@ -1,0 +1,17 @@
+.videogames {
+    display              : grid;
+    justify-content      : space-around;
+    grid-auto-flow       : column;
+    grid-auto-flow       : row;
+    grid-auto-rows       : 1fr;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    gap                  : 1em;
+    margin               : 2em;
+}
+
+@media (max-width: 600px) {
+    .videogames {
+        grid-template-columns: 1fr;
+        grid-template-rows   : repeat(9, 1fr)
+    }
+}

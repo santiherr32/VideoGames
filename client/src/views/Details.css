@@ -1,0 +1,106 @@
+.details {
+    background: rgb(233, 232, 220);
+    background: -moz-linear-gradient(180deg, rgba(233, 232, 220, 1) 0%, rgba(202, 208, 119, 1) 70%, rgba(145, 217, 178, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(233, 232, 220, 1) 0%, rgba(202, 208, 119, 1) 70%, rgba(145, 217, 178, 1) 100%);
+    background: linear-gradient(180deg, rgba(233, 232, 220, 1) 0%, rgba(202, 208, 119, 1) 70%, rgba(145, 217, 178, 1) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#e9e8dc", endColorstr="#91d9b2", GradientType=1);
+    padding   : 2em;
+    min-height: 100vh;
+}
+
+.details__videogame {
+    display      : grid;
+    align-items  : center;
+    justify-items: center;
+    gap          : 2rem;
+    grid-template-areas:
+        "picture      info"
+        "description platforms"
+}
+
+.details__videogame .details__videogame-picture {
+    grid-area : picture;
+    text-align: center;
+    width     : 100%;
+    min-width : 450px;
+}
+
+.details__videogame .details__videogame-picture__img {
+    width        : 100%;
+    border-radius: .5rem;
+}
+
+.details__videogame .details__videogame-info {
+    grid-area : info;
+    text-align: left;
+    width     : 60%;
+}
+
+.details__videogame .details__videogame-info__genres {
+    display  : flex;
+    gap      : .5em;
+    flex-wrap: wrap;
+}
+
+.details__videogame-info .details__videogame-info__genre {
+    max-width       : max-content;
+    background-color: blueviolet;
+    border-radius   : .5rem;
+    color           : hsl(0, 68%, 94%);
+    padding         : 0.3em .8em;
+}
+
+.details__videogame .details__videogame-description {
+    grid-area    : description;
+    text-align   : left;
+    width        : 100%;
+    /* padding   : 0 2rem; */
+}
+
+.details__videogame .details__videogame-platforms {
+    grid-area : platforms;
+    text-align: left;
+    width     : 60%;
+}
+
+.details__videogame-platforms .details__videogame-platforms__platforms-list {
+    display  : flex;
+    gap      : .5em;
+    flex-wrap: wrap;
+}
+
+.details__videogame-platforms .details__videogame-platforms__platform-item {
+    max-width       : max-content;
+    background-color: dodgerblue;
+    border-radius   : .5rem;
+    color           : hsl(0, 68%, 94%);
+    padding         : 0.3em .8em;
+}
+
+@media screen and (max-width: 900px) {
+    .details__videogame {
+        grid-template-areas:
+            "picture picture"
+            "info description"
+            "platforms platforms"
+    }
+
+    .details__videogame .details__videogame-platforms {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .details__videogame {
+        grid-template-areas:
+            "picture"
+            "info"
+            "description"
+            "platforms"
+    }
+
+    .details__videogame .details__videogame-platforms,
+    .details__videogame .details__videogame-info {
+        width: 100%;
+    }
+}

@@ -1,0 +1,183 @@
+:root {
+    --primary-color: hsl(11, 100%, 47%);
+    --soft-white   : hsl(0, 24%, 86%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+html,
+body {
+    /* font-size: 62.5%; */
+    height: 100%;
+}
+
+.home {
+    background: rgb(237, 208, 187);
+    background: -moz-linear-gradient(180deg, rgba(237, 208, 187, 1) 0%, rgba(175, 32, 0, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(237, 208, 187, 1) 0%, rgba(175, 32, 0, 1) 100%);
+    background: linear-gradient(180deg, rgba(237, 208, 187, 1) 0%, rgba(175, 32, 0, 1) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#edd0bb", endColorstr="#af2000", GradientType=1);
+    min-height: 100vh;
+}
+
+.home .home_top-bar {
+    display        : flex;
+    max-height     : 20%;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 1em 0;
+}
+
+.home .show-filters-btn {
+    margin-left       : 1.5rem;
+    width             : max-content;
+    cursor            : pointer;
+    font-weight       : 700;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    padding           : .7em 1em;
+    border-radius     : .7rem;
+    background        : hsl(60, 18%, 96%);
+    border            : .1rem solid transparent;
+    box-shadow        :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+
+    display          : -webkit-box;
+    display          : -ms-flexbox;
+    display          : flex;
+    -webkit-box-align: center;
+    -ms-flex-align   : center;
+    align-items      : center;
+    font-size        : 15px;
+    text-decoration  : none;
+    color            : hsl(0, 0%, 10%);
+}
+
+.home .show-filters-btn:hover {
+    background: hsl(60, 18%, 71%);
+}
+
+.home .show-filters-btn>svg {
+    width             : 34px;
+    margin-left       : 10px;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition        : -webkit-transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.home .show-filters-btn:hover svg {
+    -webkit-transform: translateX(5px);
+    -ms-transform    : translateX(5px);
+    transform        : translateX(5px);
+}
+
+.home .show-filters-btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform    : scale(0.95);
+    transform        : scale(0.95);
+}
+
+.home .home_selectors {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.home .decoration svg {
+    position: absolute;
+}
+
+.home #home_create-btn {
+    position          : sticky;
+    bottom            : 2%;
+    left              : 90%;
+    margin-right      : .5rem;
+    width             : max-content;
+    cursor            : pointer;
+    font-weight       : 700;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    padding           : 10px 20px;
+    border-radius     : 100px;
+    background        : var(--primary-color);
+    border            : 1px solid transparent;
+    display           : -webkit-box;
+    display           : -ms-flexbox;
+    display           : flex;
+    -webkit-box-align : center;
+    -ms-flex-align    : center;
+    align-items       : center;
+    font-size         : 15px;
+    text-decoration   : none;
+    color             : hsl(0, 24%, 86%);
+}
+
+.home #home_create-btn:hover {
+    background: hsl(10, 96%, 40%);
+}
+
+.home #home_create-btn>svg {
+    width             : 2rem;
+    height            : 2rem;
+    margin-left       : 0.6rem;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition        : -webkit-transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.home #home_create-btn:hover svg {
+    -webkit-transform: translateX(5px);
+    -ms-transform    : translateX(5px);
+    transform        : translateX(5px);
+}
+
+.home #home_create-btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform    : scale(0.95);
+    transform        : scale(0.95);
+}
+
+input[type="checkbox"] {
+    display: none
+}
+
+input[type="checkbox"]+label {
+    -webkit-transition : all 500ms ease;
+    transition         : all 500ms ease;
+    font-size          : 8px;
+    cursor             : pointer;
+    border-radius      : .5rem;
+    background-color   : #fff;
+    border             : solid 2px #7d7d7d;
+    padding            : 1em 1.3em;
+    display            : inline-block;
+    -moz-user-select   : -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select    : none;
+    user-select        : none;
+}
+
+
+input[type="checkbox"]:checked+label {
+    -webkit-transition: all 500ms ease;
+    transition        : all 500ms ease;
+    background-color  : var(--primary-color);
+    color             : white;
+    border-color      : var(--primary-color);
+}
+
+.home .pages {
+    display        : flex;
+    justify-content: center;
+}

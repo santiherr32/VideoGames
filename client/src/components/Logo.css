@@ -1,0 +1,16 @@
+.logo {
+    margin-left: 2rem;
+}
+
+.logo #logo_img {
+    max-width: 15rem;
+}
+
+.logo #logo_title {
+    color    : hsl(0, 0%, 8%);
+    font-size: 1.8rem;
+}
+
+.logo #logo_title span {
+    color: var(--primary-color);
+}

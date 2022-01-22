@@ -1,0 +1,180 @@
+.create {
+    background: var(--primary-color);
+    background: -moz-linear-gradient(180deg, rgba(240, 42, 0, 1) 0%, rgba(229, 83, 45, 1) 82%, rgba(226, 172, 98, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(240, 42, 0, 1) 0%, rgba(229, 83, 45, 1) 82%, rgba(226, 172, 98, 1) 100%);
+    background: linear-gradient(180deg, rgba(240, 42, 0, 1) 0%, rgba(229, 83, 45, 1) 82%, rgba(226, 172, 98, 1) 100%);
+    filter    : progid:DXImageTransform.Microsoft.gradient(startColorstr="#f02a00", endColorstr="#e2ac62", GradientType=1);
+    padding   : 2rem 0;
+    height    : 100%;
+    min-height: 100vh;
+}
+
+.new-videogame-form {
+    max-width     : 90%;
+    width         : 60rem;
+    margin        : 0 auto;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    font-size     : 1rem;
+}
+
+.new-videogame-form>* {
+    width: 75%;
+}
+
+.new-videogame-form .new-videogame-form__inputs {
+    display         : flex;
+    flex-direction  : column;
+    align-items     : flex-start;
+    align-content   : center;
+    flex-wrap       : wrap;
+    gap             : 0.5rem;
+    padding         : 1rem 1.5rem;
+    background-color: hsl(60, 18%, 96%);
+    border-radius   : .7rem;
+    margin          : 0 1.5rem;
+    border          : .125rem solid hsl(11deg 83% 33%);
+    box-shadow      :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+}
+
+.new-videogame-form .new-videogame-form__inputs>legend {
+    text-align : justify;
+    font-size  : 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+.new-videogame-form .new-videogame-form__inputs label:nth-last-of-type(3) {
+    margin-right: 3rem;
+}
+
+.platforms__step textarea,
+.new-videogame-form #description {
+    resize        : none;
+    /* width      : 60%; */
+    padding       : 0 .2rem;
+    vertical-align: top;
+}
+
+.new-videogame-form input[type='text'],
+.new-videogame-form input[type='text']:focus,
+.new-videogame-form input[type='text']:focus-visible {
+    padding: 0 .2rem;
+}
+
+.new-videogame-form .new-videogame-form__genres,
+.new-videogame-form .new-videogame-form__platforms {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-evenly;
+    gap             : 1rem;
+    padding         : 1rem 1.5rem;
+    background-color: hsl(60, 18%, 96%);
+    border-radius   : .7rem;
+    margin          : 0 1.5rem;
+    border          : .125rem solid hsl(11deg 83% 33%);
+    box-shadow      :
+        5.9px 4.8px 10.3px -4px rgba(0, 0, 0, 0.024),
+        16.1px 13.2px 28.4px -4px rgba(0, 0, 0, 0.035),
+        39.1px 32.1px 68.4px -4px rgba(0, 0, 0, 0.046),
+        134px 110px 227px -4px rgba(0, 0, 0, 0.07);
+}
+
+.new-videogame-form .new-videogame-form__genre-options,
+.new-videogame-form .new-videogame-form__platforms-options {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    flex-wrap      : wrap;
+    gap            : 0.5rem;
+}
+
+.new-videogame-form .new-videogame-form__genres>legend,
+.new-videogame-form .new-videogame-form__platforms>legend {
+    text-align : justify;
+    font-size  : 1.2rem;
+    font-weight: 500;
+    color      : hsl(11deg 83% 33%);
+}
+
+.new-videogame-form .create-btn {
+    margin-top        : 1rem;
+    width             : max-content;
+    cursor            : pointer;
+    font-weight       : 700;
+    -webkit-transition: all .2s;
+    transition        : all .2s;
+    padding           : 10px 20px;
+    border-radius     : .7rem;
+    background        : var(--primary-color);
+    border            : 1px solid transparent;
+    display           : -webkit-box;
+    display           : -ms-flexbox;
+    display           : flex;
+    -webkit-box-align : center;
+    -ms-flex-align    : center;
+    align-items       : center;
+    font-size         : 15px;
+    text-decoration   : none;
+    color             : var(--soft-white);
+}
+
+.new-videogame-form .create-btn:hover {
+    background: hsl(10, 96%, 40%);
+}
+
+.new-videogame-form .create-btn>svg {
+    width             : 2rem;
+    height            : 2rem;
+    margin-left       : 0.6rem;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition        : -webkit-transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out;
+    transition        : transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.new-videogame-form .create-btn:hover svg {
+    -webkit-transform: scale(1.2);
+    -ms-transform    : scale(1.2);
+    transform        : scale(1.2);
+}
+
+.new-videogame-form .create-btn:active {
+    -webkit-transform: scale(0.95);
+    -ms-transform    : scale(0.95);
+    transform        : scale(0.95);
+}
+
+.new-videogame-form .error-state {
+    border       : .1rem solid red;
+    border-radius: .15rem;
+    outline      : none;
+}
+
+.new-videogame-form .error-state:hover,
+.new-videogame-form .error-state:focus-visible,
+.new-videogame-form .error-state:focus {
+    outline: .1rem solid rgb(202, 1, 1);
+}
+
+.new-videogame-form .okay-state {
+    border       : .1rem solid green;
+    border-radius: .15rem;
+    outline      : none;
+}
+
+.new-videogame-form .okay-state:hover,
+.new-videogame-form .okay-state:focus-visible,
+.new-videogame-form .okay-state:focus {
+    /* outline-color: green; */
+    outline: .1rem solid rgb(0, 87, 0);
+}
+
+.new-videogame-form .error-text {
+    color: red;
+}
